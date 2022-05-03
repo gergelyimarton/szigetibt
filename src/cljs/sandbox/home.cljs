@@ -67,7 +67,18 @@
 
    [:div.arrows
     [:span#arrow-forward.material-symbols-outlined.arrow
-     {:on-click next-image
+     {:on-click (fn [event]
+                  (js/gsap.to
+                    (.getElementById js/document "gsap")
+                    (clj->js {:duration 0.5
+                              :opacity 0
+                              :onComplete (fn [e]
+                                            (next-image event)
+                                            (js/gsap.to
+                                              (.getElementById js/document "gsap")
+                                              (clj->js {:duration 0.5
+                                                        :opacity 1})))})))
+
       :style    {:font-size "80px"}}
      "arrow_forward_ios"]]])
 
