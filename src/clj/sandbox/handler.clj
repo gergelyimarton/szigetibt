@@ -25,6 +25,7 @@
    (head)
    [:body {:class "body-container"}
     mount-target
+    (include-js "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js")
     (include-js "/js/app.js")
     [:script "sandbox.core.init_BANG_()"]]))
 

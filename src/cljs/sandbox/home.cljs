@@ -1,6 +1,6 @@
-(ns sandbox.home
-  (:require
-   [reagent.core :as reagent :refer [atom]]))
+  (ns sandbox.home
+    (:require
+     [reagent.core :as reagent :refer [atom]]))
 
 ; .fade-in {
   ; -webkit-animation: fadeIn ease 0.4s;
@@ -43,11 +43,23 @@
   [:div.gallery-container
    [:div.arrows
     [:span#arrow-back.material-symbols-outlined.arrow
-     {:on-click prev-image
+     {:on-click (fn [event]
+                  (js/gsap.to
+                      (.getElementById js/document "gsap")
+                      (clj->js {:duration 0.5
+                                :opacity 0
+                                :onComplete (fn [e]
+                                              (prev-image event)
+                                              (js/gsap.to
+                                                (.getElementById js/document "gsap")
+                                                (clj->js {:duration 0.5
+                                                          :opacity 1})))})))
+
+
       :style {:font-size "80px"}}
      "arrow_back_ios"]]
 
-   [:div.sliding-picture
+   [:div#gsap.sliding-picture
     ; (str @sliding-gallery-atom)
     [:img
      {:src
