@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.body-container {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  line-height: 1.5em;
+  background-color: white;
+  background-image: url('/images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(10px);
+  margin: 0px;
+  /* margin-bottom: 0px; */
+  /* padding: 10px; */
+
+}
+
+.sliding-picture > img{
+  width: 600px;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+.sliding-picture{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrows{
+  padding-top: 200px;
+  padding-bottom: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.arrow{
+  cursor: pointer;
+  transition: 1s ease;
+  transform: scale(0.8);
+}
+
+.arrow:hover{
+  transform: scale(1);
+  transition: 0.5s ease;
+}
+
+
+.gallery-container{
+  height: 700px;
+  margin: 0px 100px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+
+
+.velemeny-nextto{
+  display: flex;
+  justify-content: space-around;
+  align-content: stretch;
+  position: relative;
+  height: 150px;
+}
+
+.velemeny-image{
+  width: 160px;
+  border-radius: 45%;
+}
+
+.velemeny-review{
+  font-style: italic;
+  padding: 5px 10px;
+  align-items: center;
+  height: 80%;
+  display: flex;
+}
+
+.velemeny-name{
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+
+.velemeny-container{
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.velemenyek-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+
+.kezeles-title{
+  text-align: left;
+  line-height: 40px;
+  color: #000;
+  font-size: 30px;
+  padding-bottom: 20px;
+
+}
+
+
+.kezelesek-outer{
+  height: 500px;
+  width: 80%;
+  margin: 0px 100px;
+}
+
+#kezelesek-mid{
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.kezelesek-inner{
+  padding: 20px;
+  /* padding-top: px; */
+  font-size: 22px;
+}
+
+.button-container{
+  width: 80%;
+
+  font-size: 23px;
+}
+
+.button{
+  padding: 5px 30px;
+  backdrop-filter: blur(100px);
+  cursor: pointer;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: 1s ease;
+  transform: scale(0.8);
+}
+
+.button:hover{
+  background-color: lightgray;
+  transform: scale(1);
+  transition: 0.5s ease;
+}
+
+
+
+
+.three-pictures-text{
+  margin: 100px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.footer-content{
+  text-align: left;
+}
+
+.footer{
+  background-color: white;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.image-and-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header{
+  background-color: white;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.header-contents{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.email-num{
+  text-align: right;
+}
+
+.tablazat{
+  width: 80%;
+  margin: auto;
+  /* justify-content: center; */
+  display: flex;
+  align-items: stretch;
+  font-size: 24px;
+}
+
+.home{
+  padding: 10px
+}
+
+.vertical-line{
+  border-left: 2px solid black;
+  /* height: 500px; */
+  position: relative;
+  margin: 0px 10px 10px 10px;
+}
+
+h1{
+  margin: 0px;
+  text-align: left;
+  line-height: 40px;
+  color: #000;
+  font-size: 2.5em
+}
+
+h2 {
+  text-align: center;
+  line-height: 40px;
+  color: #000;
+  font-size: 2em
+}
+
+h3 {
+  text-align: left;
+  line-height: 40px;
+  color: #000;
+  font-size: 1.5em
+}
+
+a {
+  text-decoration: none;
+  color: #09f;
+}
+
+a:hover {
+  text-decoration: underline;
+}

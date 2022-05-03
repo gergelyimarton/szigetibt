@@ -1,0 +1,8 @@
+{:lein         {:profile "+shadow-cljs"}
+ :builds       {:app {:target     :browser
+                      :output-dir "resources/public/js"
+                      :asset-path "/js"
+                      :modules    {:app {:entries [sandbox.core]}}
+                      :devtools   {:after-load sandbox.core/mount-root}}}
+ :dev-http     {3000 {:root    "resources/public"
+                      :handler sandbox.handler/app}}}
