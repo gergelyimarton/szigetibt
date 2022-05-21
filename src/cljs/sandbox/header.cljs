@@ -3,8 +3,9 @@
    [reagent.core :as reagent :refer [atom]]))
 
 ;; kontaktos
-(def contacts [["Gergelyi Márton" "gergelyimarci@gmail.com" "2566543"]
-               ["Tapaszti Dorina" "dodotapaszti@gmail.com" "4345682"]])
+(def contacts [["Szigeti Ágnes" "agi.szigeti@gmail.com" "+36309604848"]
+               ["Gergelyi Márton" "gergelyimarci@gmail.com" "+36302460625"]])
+
 
 (defn contact-card [name email phone]
   [:div
@@ -21,8 +22,7 @@
 (defn view []
   [:div.header
    [:div.header-contents
-    [:div.title
-     [:h1 "Cégnév"]]
-    [:div
-     [:div.email-num "Emails/Phone num.:"]
+    [:div.title "Szigeti bt."]
+    [:div.header-contacts
+     [:div.email-num "Email és telefonszám"]
      (map contact-mapper contacts)]]])

@@ -3,13 +3,13 @@
 .body-container {
   font-family: 'Montserrat', sans-serif;
   color: black;
-  line-height: 1.5em;
+  line-height: 1.8em;
   background-color: white;
   background-image: url('/images/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  backdrop-filter: blur(10px);
   margin: 0px;
+  /* backdrop-filter: blur(10px); */
   /* margin-bottom: 0px; */
   /* padding: 10px; */
 
@@ -76,6 +76,7 @@
   align-items: center;
   height: 80%;
   display: flex;
+  font-size: 18px;
 }
 
 .velemeny-name{
@@ -88,11 +89,12 @@
 
 .velemeny-container{
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 
 .velemenyek-container{
+  margin-bottom: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
@@ -110,14 +112,14 @@
 
 
 .kezelesek-outer{
-  height: 500px;
-  width: 80%;
+  height: auto;
+  width: auto;
   margin: 0px 100px;
 }
 
 #kezelesek-mid{
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .kezelesek-inner{
@@ -128,18 +130,17 @@
 
 .button-container{
   width: 80%;
-
   font-size: 23px;
 }
 
 .button{
-  padding: 5px 30px;
+  padding: 10px;
   backdrop-filter: blur(100px);
   cursor: pointer;
   text-align: center;
   line-height: 30px;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
   transition: 1s ease;
   transform: scale(0.8);
 }
@@ -151,57 +152,93 @@
 }
 
 
-
-
 .three-pictures-text{
   margin: 100px 0px;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
 }
 
 
-.footer-content{
-  text-align: left;
+.made-by-who{
+  padding-top: 14px;
+}
+
+.contact{
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .footer{
   background-color: white;
   padding: 10px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.5);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
+
 }
 
-.image-and-content{
+/* .image-and-content{
   display: flex;
   justify-content: space-between;
-}
+} */
 
 .header{
   background-color: white;
   padding: 10px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .header-contents{
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px;
 }
 
+.header-contacts{
+  text-align: right
+}
 
 .email-num{
   text-align: right;
+  font-size: 1.3em;
+}
+
+.title{
+  display: flex;
+  padding-top: 26px;
+  color: #000;
+  font-size: 60px;
+  /* line-height: 60px; */
+  color: #000;
 }
 
 .tablazat{
   width: 80%;
+  padding-top: 50px;
   margin: auto;
   /* justify-content: center; */
   display: flex;
   align-items: stretch;
-  font-size: 24px;
+  font-size: 30px;
+  line-height: 33px;
+}
+
+.base{
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .home{
-  padding: 10px
+  padding: 10px;
+  width: 1200px;
 }
 
 .vertical-line{
@@ -210,6 +247,8 @@
   position: relative;
   margin: 0px 10px 10px 10px;
 }
+
+
 
 h1{
   margin: 0px;

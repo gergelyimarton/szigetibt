@@ -7,9 +7,9 @@
 
 (def mount-target
   [:div#app
-   [:h2 "Welcome to sandbox"]
-   [:p "please wait while Figwheel/shadow-cljs is waking up ..."]
-   [:p "(Check the js console for hints if nothing exciting happens.)"]])
+   ; [:h2 "Welcome to sandbox"]
+   [:h2 "Please wait while Figwheel/shadow-cljs is waking up ..."]
+   [:h2 "(Check the js console for hints if nothing exciting happens.)"]])
 
 (defn head []
   [:head
@@ -40,10 +40,10 @@
   (reitit-ring/ring-handler
    (reitit-ring/router
     [["/" {:get {:handler index-handler}}]
-     ; ["/hello" {:get {:handler (fn [request]
-     ;                            {:status 200
-     ;                             :headers {"Content-Type" "text/plain"}
-     ;                             :body "hello-marci"})}}]
+     ["/hello" {:get {:handler (fn [request]
+                                {:status 200
+                                 :headers {"Content-Type" "text/plain"}
+                                 :body (str request)})}}]
      ["/items"
       ["" {:get {:handler index-handler}}]
       ["/:item-id" {:get {:handler index-handler

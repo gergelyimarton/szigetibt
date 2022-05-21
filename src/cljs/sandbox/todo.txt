@@ -1,0 +1,2 @@
+-képgaléria változása a kiválasztott kezelés függvényében
+-kezeléseknél a gombok rendezve, a képek alatt legyen
