@@ -151,8 +151,13 @@
   transition: 0.5s ease;
 }
 
+.service-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
-.three-pictures-text{
+.services-grid{
   margin: 100px 0px;
   /* display: flex;
   justify-content: space-between; */
